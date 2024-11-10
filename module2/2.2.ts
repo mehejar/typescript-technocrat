@@ -11,6 +11,7 @@
     }
 
     type Usertype1 = User1 & {role: string}
+
     interface Usertype2 extends User1 {
         role: string
     }
@@ -19,4 +20,6 @@
         age: 22,
         role: "designer"
     }
+
+    
 }

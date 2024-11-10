@@ -15,6 +15,6 @@ const {contact, name:{lastName}} = userCB
 
 const frnds1= ['Mahtab', 'Ali', 'Abul', 'Mahid']
 
-const [,,goru,...rest] = frnds1
+const [,, goru, ...rest] = frnds1
 
 }
