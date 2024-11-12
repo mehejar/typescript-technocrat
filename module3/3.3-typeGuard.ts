@@ -15,5 +15,24 @@
     const res1 = add(2, 6)
     console.log(res1)
 
-    // in guard
+    // in guard "use hoy object er property er jonno"
+    type NormalUser = {
+        name: string;
+    }
+    type AdminUser = {
+        name: string;
+        role: string;
+    }
+
+    const getUser = (user1 : NormalUser | AdminUser)=>{
+        if("role" in user1){
+return console.log(`I am ${user1.name} an my role ${user1.role}`)
+        }
+        else{
+            return console.log(`I am  ${user1.name}`)
+        }
+    }
+
+    const res = getUser({name: "mehejar",})
+
 }
